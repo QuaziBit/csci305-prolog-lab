@@ -1,0 +1,98 @@
+Olexandr Matveyev
+
+EC1: cousin(X, 'Prince Charles').
+     X = 'Viscount Linley' ;
+     X = 'Lady Sarah Chatto' ;
+
+EC2: cousin('Prince Charles', X).
+     X = 'Viscount Linley' ;
+     X = 'Lady Sarah Chatto' ;
+
+1: father(X, 'Queen Elizabeth II').
+   X = 'King George VI' ;
+
+2: grandmother(X, 'Queen Elizabeth II').
+   X = 'Queen Mary' ;
+
+3: grandfather(X, 'Queen Elizabeth II').
+   X = 'King George V' ;
+
+4: grandparent(X, 'Queen Elizabeth II').
+   X = 'King George V' ;
+   X = 'Queen Mary' ;
+
+5: grandparent('Queen Elizabeth II', X).
+   X = 'Prince William' ;
+   X = 'Prince Henry' ;
+
+6: sibling(X, 'Queen Elizabeth II').
+   X = 'Princess Margaret' ;
+
+7: son(X, 'Queen Elizabeth II').
+   X = 'Prince Charles' ;
+   X = 'Prince Andrew' ;
+   X = 'Prince Edward'.
+
+8: daughter(X, 'Queen Elizabeth II').
+   X = 'Princess Anne' ;
+
+9: aunt(X, 'Lady Diana Spencer').
+   false.
+
+10: spouse(X, 'Prince William').
+    X = 'Catherine Middleton' ;
+
+11: ancestor(X, 'Prince Henry').
+    X = 'Prince Charles' ;
+    X = 'Lady Diana Spencer' ;
+    X = 'Queen Elizabeth II' ;
+    X = 'Prince Philip' ;
+    X = 'King George VI' ;
+    X = 'Lady Elizabeth Bowes-Lyon' ;
+    X = 'King George V' ;
+    X = 'Queen Mary' ;
+    X = 'King Edward VII' ;
+    X = 'Princess Alexandra of Denmark' ;
+    X = 'Prince Albert' ;
+    X = 'Queen Victoria' ;
+
+12: descendant('Queen Victoria', Y).
+    false.
+
+13: older('Prince Henry', 'Prince William').
+    Prince Henry
+    true.
+
+14: older(X, 'Queen Elizabeth II').
+    X = 'Princess Margaret' ;
+    X = 'Lady Diana Spencer' ;
+    X = 'Princess Anne' ;
+    X = 'Catherine Middleton' ;
+    X = 'Prince Charles' ;
+    X = 'Prince Andrew' ;
+    X = 'Prince Edward' ;
+    X = 'Prince William' ;
+    X = 'Prince Henry' ;
+    X = 'Prince George' ;
+    X = 'Princess Charlotte' ;
+    X = 'Viscount Linley' ;
+    X = 'Lady Sarah Chatto' ;
+    X = 'Antony Armstrong-Jones'.
+
+15: regentWhenBorn(X, 'Queen Elizabeth II').
+    X = 'King George V' ;
+
+16: Name something you like about Prolog. Explain.
+    I didn't find anything that I would like in the Prolog.
+
+17: Name something you dislike about Prolog. Explain.
+    Its syntax.
+
+18: Did you enjoy this lab? Which aspects did you like and/or dislike?
+    I did not enjoy this lab.
+
+19: Approximately how many hours did you spend on this lab?
+    ~5
+
+20: Do you think you will use Prolog again? For which type(s) of project(s)?
+    I think that I will not use Prolog again.
